@@ -30,7 +30,7 @@ export default class ApiExample extends Component {
     // to it. And we also needed to access the component state
     var myObj = this;
 
-    // Call api here
+    // Call search api here
     apimod.getCity("1", "city", function(responseData) {
 
         myObj.setState({
@@ -39,6 +39,13 @@ export default class ApiExample extends Component {
         });
 
     });
+
+
+    // call getReviews api here
+    apimod.getReviews("18337894", function(responseData) {
+      // TODO add code to fetch the user reviews
+    });
+
 }
 
 
